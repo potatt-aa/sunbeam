@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+     margin: 0;
+  padding: 2rem 1.5rem;
+  color: #3f64b8;
+    background: #ffeab6
+}
+ 
+/* by tag: every h2 on the page */
+h2 {
+  color: #82401a;
+}
+ 
+/* by class: anything with class="card" */
+.card {
+  background: #fedebc;
+}
+ 
+/* by id: the one element with id="doubloons" */
+#doubloons {
+  cursor: pointer;
+}
