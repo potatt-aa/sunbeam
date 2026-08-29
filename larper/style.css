@@ -1,5 +1,5 @@
 body {
-    font-family: 'bryndan write', 
+    font-family: 'Bryndan-Write', cursive;
      margin: 0;
   padding: 2rem 1.5rem;
   color: #3f64b8;
@@ -10,6 +10,7 @@ body {
 /* by tag: every h2 on the page */
 h2 {
   color: #3f64b8;
+  font-size: 0.75rem;
 }
  
 /* by class: anything with class="card" */
@@ -36,6 +37,7 @@ h1 {
   color: #6b5748;
   margin: 0;
   text-align: center;
+  font-size: 0.75rem;
 }
  
 .hero {
@@ -63,10 +65,12 @@ footer {
  
 a {
   color: #f7a13f;
+  font-size: 0.75rem;
 }
  
 button {
   font: inherit;
+  font-size: 0.75rem;
   background: #f7ad95;
   color: #fff;
   border: none;
