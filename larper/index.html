@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+    <header>
+        <img src="https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%20100.png" alt="header image" width="2000">
+    </header>
+
     <head>
         <meta charset="utf-8" />
         <title>sidequest maxxing</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <header class="hero">
-             <h1>SIDEQUEST MAXXING!</h1>
-        </header>
-
+       
         <main>
             <section class="card">
                 <h2>50+ sidequest ideas at your fingertips (๑>ᴗ<๑) </h2>
-                <p>instead of doomscrolling, here's some sidequests to solo or do with friends!
-                </p>
-                <h3>click the button to generate a sidequest!</h3>
+                <h5>instead of doomscrolling, here's some sidequests!</h5>
+                <h3>click the button to generate a perfect day!</h3>
                    <button id="solo">solo</button>
                       <button id="friends">with friends</button>
-            </h3>
+
+            <section class="quest">
+        
+              <img id="randomsolo-img" src=" alt="solo image">
+
+              <script>
+                const soloImageArray = [
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%2099.png",
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%20100.png",
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%2099.png"
+                ];
+                const soloImgElement = document.getElementById("randomsolo-img");
+                const soloBtnElement = document.getElementById("solo");
+
+                function showRandomSoloImage() {
+                  const randomIndex = Math.floor(Math.random() * soloImageArray.length);
+                  soloImgElement.src = soloImageArray[randomIndex];
+                }
+
+                soloBtnElement.addEventListener("click", showRandomSoloImage);
+              </script>
+
+              <img id="randomfriends-img" src=" alt="friends image">
+
+              <script>
+                const friendsImageArray = [
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%2099.png",
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%20100.png",
+                  "https://file.garden/akViTgt553ws6yVh/Untitled_Artwork%2099.png"
+                ];
+                const friendsImgElement = document.getElementById("randomfriends-img");
+                const friendsBtnElement = document.getElementById("friends");
+
+                function showRandomFriendsImage() {
+                  const randomIndex = Math.floor(Math.random() * friendsImageArray.length);
+                  friendsImgElement.src = friendsImageArray[randomIndex];
+                }
+
+                friendsBtnElement.addEventListener("click", showRandomFriendsImage);
+              </script>
             </section>
 
-            <section >
-                
-                <h2>404 we're def not found here</h2>
+  <section >
+           
+    </section>
+        </main>
+            
+        <footer>
+            <h4>404 not found
                 <em>
                 <p><a href="https://github.com/potatt-aa">ou shii github</a></p>
                 <p><a href="https://github.com/RachXiXi">github larp</a></p>
                 </em>
-                
-                    <button id="doubloons">fund our sidequests</button>
-                    <p class="tagline" id="count">0 doubloons</p>
-            </section>
-        </main>
-            
-        <footer>
-            <p>made by professional larpers <strong></strong>(ദ്ദി ˙ᗜ˙ )</strong></p>
+                </h4>
+            <p>made by professional larpers <strong>ദ്ദി ˙ᗜ˙ )</strong></p>
         </footer>
           <script src="script.js"></script>
     </body>
